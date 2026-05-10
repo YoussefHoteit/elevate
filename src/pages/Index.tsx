@@ -1,26 +1,24 @@
 import { Hero } from "@/components/Hero";
 import { MadeWithDyad } from "@/components/made-with-dyad";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { 
   Bolt, 
-  SupportAgent, 
-  Strategy, 
-  Draw, 
-  Web, 
-  Engineering, 
-  SearchInsights, 
-  Campaign, 
-  EditSquare, 
-  Videocam, 
-  AutoAwesome,
-  ArrowForward,
+  Headset, 
+  Target, 
+  Pencil, 
+  Globe, 
+  Settings, 
+  BarChart, 
+  Megaphone, 
+  SquarePen, 
+  Video, 
+  Sparkles,
+  ArrowRight,
   Star,
-  Public,
-  Share,
+  Share2,
   Mail,
   Check,
-  Close
+  X
 } from "lucide-react";
 
 const Index = () => {
@@ -57,9 +55,9 @@ const Index = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { icon: Bolt, text: "Fast Delivery" },
-                { icon: SupportAgent, text: "Monthly Support" },
-                { icon: Strategy, text: "Custom Strategy" },
-                { icon: Draw, text: "Creative Content" }
+                { icon: Headset, text: "Monthly Support" },
+                { icon: Target, text: "Custom Strategy" },
+                { icon: Pencil, text: "Creative Content" }
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-4">
                   <item.icon className="text-secondary w-8 h-8" />
@@ -79,24 +77,24 @@ const Index = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {[
-                { icon: Web, title: "Website Design", desc: "Custom UI/UX experiences built for high conversion and brand prestige." },
-                { icon: Engineering, title: "Maintenance", desc: "Proactive security, updates, and performance tuning for your digital assets." },
-                { icon: SearchInsights, title: "SEO", desc: "Technical and on-page optimization to rank your business where it matters most." },
-                { icon: Campaign, title: "Social Media", desc: "Full management and strategy to build an engaged community around your brand." },
-                { icon: EditSquare, title: "Content Creation", desc: "Professional copy and visuals that tell your brand's unique story with authority." },
-                { icon: Videocam, title: "Video/Reels", desc: "High-impact short-form video content designed for viral reach and engagement." }
+                { icon: Globe, title: "Website Design", desc: "Custom UI/UX experiences built for high conversion and brand prestige." },
+                { icon: Settings, title: "Maintenance", desc: "Proactive security, updates, and performance tuning for your digital assets." },
+                { icon: BarChart, title: "SEO", desc: "Technical and on-page optimization to rank your business where it matters most." },
+                { icon: Megaphone, title: "Social Media", desc: "Full management and strategy to build an engaged community around your brand." },
+                { icon: SquarePen, title: "Content Creation", desc: "Professional copy and visuals that tell your brand's unique story with authority." },
+                { icon: Video, title: "Video/Reels", desc: "High-impact short-form video content designed for viral reach and engagement." }
               ].map((service, i) => (
                 <div key={i} className="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container/5">
                   <service.icon className="w-10 h-10 text-secondary mb-6" />
                   <h3 className="text-xl font-bold mb-4">{service.title}</h3>
                   <p className="text-on-surface-variant mb-8 flex-grow">{service.desc}</p>
                   <a className="text-secondary font-bold flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
-                    Learn More <ArrowForward className="w-4 h-4" />
+                    Learn More <ArrowRight className="w-4 h-4" />
                   </a>
                 </div>
               ))}
               <div className="glass-card p-8 rounded-2xl flex flex-col h-full group hover:bg-secondary-container/5 lg:col-span-2">
-                <AutoAwesome className="w-10 h-10 text-secondary mb-6" />
+                <Sparkles className="w-10 h-10 text-secondary mb-6" />
                 <div className="lg:flex lg:gap-12">
                   <div>
                     <h3 className="text-xl font-bold mb-4">Branding</h3>
@@ -135,8 +133,8 @@ const Index = () => {
             <div className="text-2xl font-bold text-primary mb-6">Elevate</div>
             <p className="text-on-surface-variant mb-8">Building the next generation of digital-first brands with precision and creativity.</p>
             <div className="flex gap-4">
-              <Public className="text-on-surface-variant cursor-pointer hover:text-secondary w-5 h-5" />
-              <Share className="text-on-surface-variant cursor-pointer hover:text-secondary w-5 h-5" />
+              <Globe className="text-on-surface-variant cursor-pointer hover:text-secondary w-5 h-5" />
+              <Share2 className="text-on-surface-variant cursor-pointer hover:text-secondary w-5 h-5" />
               <Mail className="text-on-surface-variant cursor-pointer hover:text-secondary w-5 h-5" />
             </div>
           </div>
